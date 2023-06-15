@@ -89,18 +89,10 @@ $(function () {
         workImg.stop().slideToggle(1000, 'easeInOutQuint');
     })
 
-    let nameMenu = $('.name ul li');
+    let nameMenu = $('.name.pc ul li');
     nameMenu.click(function () {
         nameMenu.removeClass('on');
         $(this).addClass('on');
-    })
-
-    //swiper 탭메뉴 클릭시 해당하는 swiper로 이동
-    //console.log(nameMenu.click());
-    nameMenu.click(function () {
-        let index = $(this).index();
-        //console.log(index);
-        swiper.slideTo(index);
     })
 
     //fancybox
